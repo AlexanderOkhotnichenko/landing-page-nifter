@@ -1,0 +1,10 @@
+import '../scss/main.scss';
+import '../index.html';
+import './pixelRain.js';
+import './countdown.js';
+import './customSelect.js';
+import './splide.js';
+import './swiper.js';
+import './switchTabArt.js';
+import './burgerMenuToggle.js';
+import './header.js';

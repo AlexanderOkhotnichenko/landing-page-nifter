@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+  min-width: 20rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, serif;
+}
+
+body {
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-size: inherit;
+  min-width: 20rem;
+  // background-color: var(--color-1);
+  background-color: #1F0B1F;
+  overflow-x: hidden;
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+
+[class*="__container"] {
+  max-width: 96.375rem;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}

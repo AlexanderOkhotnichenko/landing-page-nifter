@@ -1,0 +1,140 @@
+.footer {
+  &__container {
+    padding-top: 4.063rem !important;
+    padding-bottom: 1.25rem;
+    max-width: 70.938rem;
+    margin: 0 auto;
+  }
+}
+
+.footer-content {
+  display: flex;
+  gap: 2.813rem;
+}
+
+.footer-description {
+  max-width: 19.938rem;
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.938rem;
+    padding-bottom: 2.313rem;
+    svg {
+      width: 2.438rem;
+      height: auto;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 3.063rem;
+      color: var(--color-5);
+    }
+  }
+  .footer-text {
+    font-weight: 200;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.563rem;
+    color: var(--color-5);
+  }
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    a {
+      display: block;
+    }
+  }
+}
+
+.footer-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: fit-content;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  .footer-item {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    &:first-child {
+      color: var(--color-27);
+    }
+    .footer-link {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      color: var(--color-5);
+      transition: var(--speed-03);
+      &:hover {
+        color: var(--color-27);
+      }
+    }
+  }
+}
+
+@media (max-width: 915px) {
+  .footer-content {
+    gap: 1.25rem;
+  }
+  .footer-description {
+    .footer-logo {
+      padding-bottom: 1.25rem;
+      svg {
+        width: 1.875rem;
+      }
+      h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+    }
+    .footer-text {
+      padding-bottom: 1.25rem;
+    }
+  }
+  .footer-menu {
+    gap: 1.438rem;
+    .footer-item .footer-link {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-description {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 625px) {
+  .footer-description {
+    max-width: none;
+  }
+  .footer-menu-wrapper {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fill, minmax(11.188rem, auto));
+    row-gap: 1.875rem;
+  }
+  .footer-menu {
+    gap: 0.875rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .footer__container {
+    padding: 2.5rem 1rem 1.25rem 1rem;
+
+  }
+  .footer-menu-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(8.125rem, auto));
+  }
+}

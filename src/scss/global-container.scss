@@ -1,0 +1,15 @@
+.global__container {
+  max-width: 88.375rem !important;
+}
+
+@media (max-width: 470px) {
+  .global__container {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .global__container {
+    padding: 0 1rem;
+  }
+}
